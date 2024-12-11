@@ -1,0 +1,15 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings
+
+title: Homepage
+
+backgroundOpacity: 0.6
+cardBlur: md # or sm, lg
+headerStyle: underlined # or boxed, boxedWidgets, clean
+
+background: https://wallpapercat.com/w/full/c/f/e/1520416-2048x1363-desktop-hd-mount-fuji-japan-wallpaper-image.jpg
+
+#providers:
+#  openweathermap: openweathermapapikey
+#  weatherapi: weatherapiapikey

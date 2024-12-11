@@ -1,0 +1,74 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Media & Storage:
+    - Jellyfin:
+        href: JELLYFIN_URL
+        icon: jellyfin.svg
+        description: Multimedia Service
+        widget:
+          type: jellyfin
+          url: JELLYFIN_URL
+          key: JELLYFIN_KEY
+          enableBlocks: true
+          enableNowPlaying: true
+          enableUser: true
+          showEpisodeNumber: true
+          expandOneStreamToTwoRows: true
+    - OpenMediaVault:
+        href: OMV_URL
+        icon: openmediavault.svg
+        description: Open network attached storage solution
+        widget:
+          type: openmediavault
+          url: OMV_URL
+          username: OMV_USERNAME
+          password: OMV_PASSWORD
+          method: services.getStatus # required
+
+- Home:
+    - Home Assistant:
+        href: HASS_URL
+        icon: home-assistant.svg
+        description: Open source home automation
+        widget:
+          type: homeassistant
+          url: HASS_URL
+          key: HASS_KEY
+
+- Tools & Admin:
+    - ChangeDetection.io:
+        href: CD_URL
+        icon: changedetection-io.png
+        description: Monitor websites changes
+        widget:
+          type: changedetectionio
+          url: CD_URL
+          key: CD_KEY
+    - Portainer:
+        href: PORTAINER_URL
+        icon: portainer.svg
+        description: Container management software
+        widget:
+          type: portainer
+          url: PORTAINER_URL
+          env: 2
+          key: PORTAINER_KEY
+    - Proxmox:
+        href: PROXMOX_URL
+        icon: proxmox.svg
+        description: Powerful open-source server solutions
+        widget:
+          type: proxmox
+          url: PROXMOX_URL
+          username: PROXMOX_USERNAME
+          password: PROXMOX_PASSWORD
+    - Tailscale:
+        href: https://login.tailscale.com/admin/machines
+        icon: tailscale.png
+        description: Mesh VPN service
+        widget:
+          type: tailscale
+          deviceid: TAILSCALE_DEVICEID
+          key: TAILSCALE_KEY
