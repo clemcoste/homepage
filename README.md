@@ -32,11 +32,14 @@ I plan to add configurations for the following services in the future:
 
 2. Connect with SSH to your Homepage LXC container
 
-3. Upload and replace the files
+3. Upload and replace the files. As exemple, the naming convention for the environment variables in the services.yaml file is the following:
 
-4. Create a ".secret.env" file in /opt/homepage/config/.secret.env
+   ```bash
+   url: http://{{HOMEPAGE_VAR_JELLYFIN_URL}}:8096
+          key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
 
-   Go to the Homepage LXC's shell and execute 
+5. Go to the Homepage LXC's shell and execute the following lines to create a ".secret.env" file
+
    ```bash
    touch /opt/homepage/config/.secret.env
    nano /opt/homepage/config/.secret.env
