@@ -47,15 +47,17 @@ I plan to add configurations for the following services in the future:
 
 ![alt text](secret2.png)
 
-6. Add the file in the homepage.service file, in the [Service] section
+6. Link the file in the homepage.service file, in the [Service] section
 
-   Path:
+Path:
    ```bash
    etc/systemd/system/homepage.service
+   ```
 
-   To be added in the [Service] section:
+To be added in the [Service] section:
    ```bash
    EnvironmentFile=/opt/homepage/config/.secret.env
+   ```
 
 7. Check the variables naming between .secret.env and services.yaml
 
