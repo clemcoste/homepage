@@ -4,71 +4,61 @@
 
 - Media & Storage:
     - Jellyfin:
-        href: JELLYFIN_URL
+        href: http://{{HOMEPAGE_VAR_JELLYFIN_URL}}:8096/
         icon: jellyfin.svg
         description: Multimedia Service
         widget:
           type: jellyfin
-          url: JELLYFIN_URL
-          key: JELLYFIN_KEY
+          url: http://{{HOMEPAGE_VAR_JELLYFIN_URL}}:8096
+          key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
           enableBlocks: true
           enableNowPlaying: true
           enableUser: true
           showEpisodeNumber: true
           expandOneStreamToTwoRows: true
+
     - OpenMediaVault:
-        href: OMV_URL
+        href: http://{{HOMEPAGE_VAR_OMV_URL}}/
         icon: openmediavault.svg
         description: Open network attached storage solution
         widget:
           type: openmediavault
-          url: OMV_URL
-          username: OMV_USERNAME
-          password: OMV_PASSWORD
+          url: http://{{HOMEPAGE_VAR_OMV_URL}}
+          username: {{HOMEPAGE_VAR_OMV_USERNAME}}
+          password: {{HOMEPAGE_VAR_OMV_PASSWORD}}
           method: services.getStatus # required
 
 - Home:
     - Home Assistant:
-        href: HASS_URL
+        href: http://{{HOMEPAGE_VAR_HASS_URL}}:8123/
         icon: home-assistant.svg
         description: Open source home automation
         widget:
           type: homeassistant
-          url: HASS_URL
-          key: HASS_KEY
+          url: http://{{HOMEPAGE_VAR_HASS_URL}}:8123
+          key: {{HOMEPAGE_VAR_HASS_KEY}}
 
 - Tools & Admin:
     - ChangeDetection.io:
-        href: CD_URL
-        icon: changedetection-io.png
+        href: http://{{HOMEPAGE_VAR_CD_URL}}:5000/
+        icon: changedetection.svg
         description: Monitor websites changes
         widget:
           type: changedetectionio
-          url: CD_URL
-          key: CD_KEY
-    - Portainer:
-        href: PORTAINER_URL
-        icon: portainer.svg
-        description: Container management software
-        widget:
-          type: portainer
-          url: PORTAINER_URL
-          env: 2
-          key: PORTAINER_KEY
+          url: http://{{HOMEPAGE_VAR_CD_URL}}:5000
+          key: {{HOMEPAGE_VAR_CD_KEY}}
+
     - Proxmox:
-        href: PROXMOX_URL
+        href: https://{{HOMEPAGE_VAR_PROXMOX_URL}}:8006/
         icon: proxmox.svg
         description: Powerful open-source server solutions
         widget:
           type: proxmox
-          url: PROXMOX_URL
-          username: PROXMOX_USERNAME
-          password: PROXMOX_PASSWORD
+          url: https://{{HOMEPAGE_VAR_PROXMOX_URL}}:8006
+          username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
+          password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+  
     - Tailscale:
         href: https://login.tailscale.com/admin/machines
         icon: tailscale.png
         description: Mesh VPN service
-        widget:
-          type: tailscale
-          deviceid: TAILSCALE_DEVICEID
-          key: TAILSCALE_KEY
