@@ -38,6 +38,15 @@
           url: http://{{HOMEPAGE_VAR_HASS_URL}}:8123
           key: {{HOMEPAGE_VAR_HASS_KEY}}
 
+    - OctoPrint:
+        href: http://{{HOMEPAGE_VAR_OCTOPRINT_URL}}/
+        icon: octoprint.svg
+        description: Remote 3D printer management software
+        widget:
+          type: octoprint
+          url: http://{{HOMEPAGE_VAR_OCTOPRINT_URL}}
+          key: {{HOMEPAGE_VAR_OCTOPRINT_KEY}}
+
 - Tools & Admin:
     - ChangeDetection.io:
         href: http://{{HOMEPAGE_VAR_CD_URL}}:5000/
