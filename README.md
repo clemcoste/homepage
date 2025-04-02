@@ -23,7 +23,6 @@ The current configuration includes the following services:
 
 I plan to add configurations for the following services in the future:
 
-- **Proxmox Backup Server:** Backup solution for Proxmox.
 - **AdGuard Home:** Network-wide ad and tracker blocking.
 
 ## How to use, and store your credentials on a separate file, with Homepage on an LXC container (Proxmox)
