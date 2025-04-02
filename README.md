@@ -15,6 +15,7 @@ The current configuration includes the following services:
 - **[Proxmox](https://www.proxmox.com/):** Virtualization and container platform.
 - **[Tailscale](https://tailscale.com/):** Mesh VPN for secure remote access.
 - **[OctoPrint](https://octoprint.org/):** Remote 3D printer management software.
+- **[Proxmox Backup Server](https://www.proxmox.com/en/products/proxmox-backup-server/overview):** Proxmox Backup Solution.
 
 01/04/2025 [UPDATE] : I added the following part concerning the storage of credentials, URLs and API keys inside a different file. That way, you can easily share your services.yaml file and store all the sensitive information into a dedicated and separate file. This tutorial is specific to the Proxmox approach. If you installed Homepage thanks to Docker, the environment variable creation is different, and well documented on the internet. Nevertheless, it was not so easy to find with the Proxmox approach.
 

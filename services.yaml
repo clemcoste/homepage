@@ -66,6 +66,11 @@
           url: https://{{HOMEPAGE_VAR_PROXMOX_URL}}:8006
           username: {{HOMEPAGE_VAR_PROXMOX_USERNAME}}
           password: {{HOMEPAGE_VAR_PROXMOX_PASSWORD}}
+
+    - Proxmox Backup Server:
+        href: https://{{HOMEPAGE_VAR_PBS_URL}}:8007/
+        icon: proxmox-light.svg
+        description: Proxmox backup solution.
   
     - Tailscale:
         href: https://login.tailscale.com/admin/machines
