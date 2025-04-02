@@ -1,6 +1,6 @@
 # :clipboard: Homelab Dashboard - Homepage Configuration
 
-![alt text](https://github.com/clemcoste/homepage/blob/0fe41f76f4df2aeb4821c1f7fe54679829d80ebb/Dashboard.jpeg?raw=true)
+![alt text](Dashboard.jpeg)
 
 Welcome to the repository for my **Homepage** configuration! This project hosts the configuration files for my homelab dashboard, which consolidates access to various services in one convenient place.
 
